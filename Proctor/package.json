@@ -1,0 +1,14 @@
+{
+  "name": "Proctor",
+  "version": "0.0.0",
+  "description": "Proctor",
+  "main": "app.js",
+  "author": {
+    "name": "abc",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "socket.io": "^1.4.5"
+  }
+}

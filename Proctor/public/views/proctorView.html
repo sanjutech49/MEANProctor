@@ -1,0 +1,29 @@
+﻿<div class="form-container">
+    <div class="container">
+        <!-- Nav tabs -->
+        <!--<ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#headsup" aria-controls="home" role="tab" data-toggle="tab">HEADS UP</a></li>
+            <li role="presentation"><a href="#datagrid" aria-controls="profile" role="tab" data-toggle="tab">DATA GRID</a></li>
+        </ul>-->
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="headsup">
+                <table>
+                    <tr class="headrow"  >
+                        <td></td>
+                        <td ng-repeat="q in details.questions"> {{q.questionid}}</td>                        
+                    </tr>
+                    <tr ng-class="s.isLoggedIn ? 'enabled' : 'disabled'" class="headrow2" ng-repeat="s in details.students">
+                        <td>
+                            {{s.student.studentid}}
+                            <img height="60" width="60" src="../img/{{s.student.studentid}}.png" alt="{{s.student.studentname}}" />
+                        </td>
+                        <td ng-repeat="q in s.student.questions"> {{q.answer}}</td>
+                    </tr>                  
+                </table>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="datagrid">...</div>
+        </div>
+
+    </div>
+    </div>
